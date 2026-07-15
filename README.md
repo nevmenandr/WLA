@@ -1,60 +1,74 @@
-# Publish your Obsidian Notes
+# 📚 Антология всемирной литературы (до XIX века)
 
-MkDocs template [![Built with Material for MkDocs](https://img.shields.io/badge/Material_for_MkDocs-526CFE?style=for-the-badge&logo=MaterialForMkDocs&logoColor=white)](https://squidfunk.github.io/mkdocs-material/)
+Этот репозиторий содержит исходные файлы для проекта **«Антология всемирной литературы (до XIX века)»** — систематизированного собрания русских переводов значимых произведений мировой литературы, созданного на основе академической **«Истории всемирной литературы» (ИВЛ)**. Проект представляет собой цифровой архив, где каждый перевод снабжен историко-литературным контекстом, а все элементы связаны в единую навигационную систему.
 
-Would you like to take _some_ of your notes in [Obsidian](https://obsidian.md/) and make it public?
+Сайт проекта доступен по адресу: [nevmenandr.github.io/WLA](https://nevmenandr.github.io/WLA/)
 
-This template gives you an easy (and automated) way to publish your Obsidian notes (or blog!) on your Github pages.
+## 🔧 Техническая архитектура и рабочий процесс
 
-With this template, you get these **out-of-the-box**:
+Репозиторий использует **шаблон [obsidian-publish-mkdocs](https://github.com/jobindjohn/obsidian-publish-mkdocs/)**, который автоматизирует публикацию заметок из Obsidian в виде статического веб-сайта с помощью MkDocs и GitHub Pages.
 
-- an awesome website based on Material theme, complete with a search bar (Checkout this template repo published [here](https://jobindjohn.github.io/obsidian-publish-mkdocs/))
-![](2021-11-22-22-49-26.png)
-- get the Obsidian/Roam style `[[wikilinks]]` from your vault in your published notes
-- Toggle between light and dark mode
-- Blog folder
+### 1. Локальная работа с Obsidian
 
-## Quick start
+*   **Хранилище (Vault)**: Вся работа ведется локально в Obsidian. Папка `docs/` внутри этого репозитория является корнем хранилища Obsidian для публичной части проекта.
+*   **Ссылки**: Используются внутренние вики-ссылки `[[Название заметки]]` для навигации между текстами, описаниями периодов и картами содержания (MOC). Плагин `mkdocs-roamlinks-plugin` преобразует эти ссылки в работающие HTML-ссылки при сборке.
+*   **Метаданные**: Каждый файл содержит YAML Frontmatter с полями: `title`, `original_title`, `period`, `region`, `genre`, `century`, `translator`, `source`, `wikipedia`, `tags`. Это позволяет использовать плагин Dataview в Obsidian для фильтрации и автоматического создания списков.
 
-1. Create a **new github repository using this template**. Click the green button at the top or use [this link](https://github.com/jobindjohn/obsidian-publish-mkdocs/generate). 
+### 2. Сборка и генерация сайта
 
-![](2021-11-22-22-54-02.png)
+*   **Инструмент**: Используется **MkDocs** с темой **Material for MkDocs**.
+*   **Плагины**:
+    *   `mkdocs-roamlinks-plugin` — для поддержки вики-ссылок `[[ ]]` в Markdown-файлах.
+    *   `mkdocs-material` — для современного интерфейса с полнотекстовым поиском и переключением между светлой и темной темами.
+*   **Конфигурация**: Все настройки находятся в файле `mkdocs.yml`. Он определяет структуру навигации (`nav`), плагины и параметры темы. По умолчанию структура сайта строится на основе файловой структуры в папке `docs/`.
+*   **Зависимости**: Список необходимых Python-пакетов зафиксирован в `requirements.txt`.
 
-2.  **Give a name** to your repository. By default your notes will be published at `<https://username.github.io/repo-name/>`
-     - Copy only the `main` branch while creating the repo from the template
-3. **Clone** the repository you generated **into your Obsidian folder/vault.**
-4. **Move your notes** that you would like to make public to the `repo-name/docs` folder.
-    - Easiest way to do this would be using drag and drop within Obsidian
-5. Commit and **push** the changes. Github actions will take care of the rest, publishing your notes using [MkDocs](https://www.mkdocs.org/), with the [Material theme](https://squidfunk.github.io/mkdocs-material/). 
-6. Go to `Settings > Pages` and select the select the **Source** as your `gh-pages` branch.
+### 3. Автоматическое развертывание (CI/CD)
 
-![](2021-11-22-22-52-49.png)
+*   **Платформа**: GitHub Actions.
+*   **Триггер**: При каждом `push` в ветку `main` запускается GitHub Actions workflow (определен в `.github/workflows/`). В конфигурации используется `actions/checkout@v4` и `actions/setup-python@v5` со встроенным кешированием для ускорения сборки.
+*   **Процесс**:
+    1.  Установка зависимостей из `requirements.txt`.
+    2.  Сборка сайта с помощью команды `mkdocs build`.
+    3.  Генерация статических HTML-файлов в папке `site/`.
+    4.  Деплой содержимого папки `site/` в ветку `gh-pages`.
+*   **Публикация**: GitHub Pages автоматически обслуживает сайт из ветки `gh-pages` по адресу `https://nevmenandr.github.io/WLA/`.
 
-**Not working for you?** Open an [issue](https://github.com/jobindjohn/obsidian-publish-mkdocs/issues/new/choose) and let me know what went wrong.
+## 🗂️ Структура проекта
 
-## Configuring your website
+```
+WLA/
+├── .github/
+│   └── workflows/          # Файлы GitHub Actions для CI/CD (деплой на gh-pages)
+├── docs/                   # КОРЕНЬ ХРАНИЛИЩА OBSIDIAN. Все Markdown-файлы.
+│   ├── 01. Древний мир/    # Заметки по периоду (характеристики, MOC)
+│   │   ├── 01. Египет/     # Заметки по текстам и регионам
+│   │   ├── 02. Двуречье/
+│   │   └── ...
+│   ├── 02. Средние века/   # Заметки для следующего тома ИВЛ
+│   └── ... (другие периоды и регионы)
+├── .gitignore
+├── LICENSE                 # Файл лицензии CC0 1.0 Universal
+├── mkdocs.yml              # Главный конфигурационный файл MkDocs
+├── README.md               # Этот файл
+└── requirements.txt        # Зависимости для сборки сайта (MkDocs, плагины)
+```
 
-### How do I arrange notes as sections and pages?
+## 📝 Принципы работы с текстами
 
-By default, the sections and pages will follow the folder structure within `/docs`. The folders and sub-folders will show up as sections. Try not to have white spaces in your folder and file names, as these will be converted to HTML links. The webpage heading will be the same as the first-level heading in the markdown note.
+1.  **Академический отбор** — тексты включаются в антологию на основании их места в ИВЛ.
+2.  **Единый формат** — каждый перевод оформляется в виде отдельного Markdown-файла с YAML Frontmatter и обязательными полями для метаданных.
+3.  **Связность** — все элементы проекта (тексты, характеристики, карты содержания) соединены внутренними вики-ссылками `[[ ]]` для обеспечения бесшовной навигации.
+4.  **Многоязычность** — для каждого текста в Frontmatter указываются оригинальное название (`original_title`) и ссылки на доступные англоязычные переводы (`source`).
 
-- If you would like to arrange the pages manually, then use the `nav` option in the `mkdocs.yml` [configuration file](https://www.mkdocs.org/#adding-pages) at the root of this repo  to set custom page navigation.
-    - For example, see the setup for [the Blue Book](https://lyz-code.github.io/blue-book/) at [github](https://github.com/lyz-code/blue-book/blob/master/mkdocs.yml). Managing each page using `nav` can become cumbersome as the number of notes increase though!
-- The Materials theme provides multiple options to arrange [sections](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-sections), use [navigation tabs](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/#navigation-tabs), and many other helpful [navigation setups](https://squidfunk.github.io/mkdocs-material/setup/setting-up-navigation/)
+## 📄 Лицензия
 
-## Alternatives
+Весь проект «Антология всемирной литературы (до XIX века)» (включая исходный код, конфигурационные файлы, скрипты автоматизации и, если не указано иное в метаданных, сами переводы) публикуется под лицензией **Creative Commons Zero (CC0) 1.0 Universal**. Это означает, что автор проекта в максимально возможной степени отказывается от всех авторских и смежных прав на содержимое проекта и передает его в общественное достояние.
 
-- [binyamin/eleventy-garden: :seedling: A starter site for building a mind garden with eleventy](https://github.com/binyamin/eleventy-garden)
-- [datopian/obsidian-flowershow](https://github.com/datopian/obsidian-flowershow): plugin for publishing with flowershow direct from your obsidian vault.
-- [kmaasrud/oboe](https://github.com/kmaasrud/oboe): tool to convert an Obsidian vault into a static directory of HTML files.
-- [Jackiexiao/foam-mkdocs-template](https://github.com/Jackiexiao/foam-mkdocs-template): template for Obsidian/Foam using mkdocs/mkdocs-material/mkdocs-roamlinks-plugin
-- [foambubble/foam-template](https://github.com/foambubble/foam-template): Foam workpace template
-- [ObsidianPublisher/obsidian-mkdocs-publisher-template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template): Obsidian Mkdocs Publisher, a free obsidian publish alternative throught Mkdocs
-- [KosmosisDire/obsidian-webpage-export](https://github.com/KosmosisDire/obsidian-webpage-export): Webpage HTML Export lets you export single files or whole vaults as HTML websites or documents. It is similar to publish, but you get direct access to the exported HTML.
-- [Enveloppe/obsidian-enveloppe: publish your notes on a GitHub repository from Obsidian Vault](https://github.com/Enveloppe/obsidian-enveloppe)
+Вы можете свободно использовать, копировать, изменять, распространять и использовать проект для любых целей, включая коммерческие, без необходимости запрашивать разрешение или указывать авторство. Однако в качестве доброй воли мы приветствуем ссылку на исходный проект.
 
-## Other interesting projects
+Полный текст лицензии доступен в файле [`LICENSE`](LICENSE) в корне репозитория.
 
-- [mathieudutour/gatsby-digital-garden: digital garden with Gatsby](https://github.com/mathieudutour/gatsby-digital-garden)
-- [TuanManhCao/digital-garden: Free Obisidian Publish alternative](https://github.com/TuanManhCao/digital-garden)
+---
 
+Автор: [Борис Орехов (nevmenandr)](https://github.com/nevmenandr)
