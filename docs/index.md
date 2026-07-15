@@ -1,10 +1,13 @@
-# Obsidian Notes
+# Антология Всемирной литературы
 
-Publish your public notes with MkDocs
+## О проекте
 
-## Hello World!
+[[О проекте]]
 
-The `index.md` in the `/docs` folder is the homepage you see here.
+## Содержание
+
+[[Содержание]]
+
 
 The folders in `/docs` appear as the main sections on the navigation bar.
 
