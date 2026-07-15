@@ -1,25 +1,34 @@
 name: ci
+
 on:
   push:
     branches:
       - master
       - main
+
 permissions:
   contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v4          # v3 → v4
-      - uses: actions/setup-python@v5     # v4 → v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          python-version: 3.x
-      - uses: actions/cache@v4            # v3 → v4
-        with:
-          key: ${{ github.ref }}
-          path: .cache
-      - run: pip install mkdocs-material
-      - run: pip install mkdocs-roamlinks-plugin
-      - run: pip install mkdocs-rss-plugin
-      # - run: pip install mkdocs-mermaid2-plugin
-      - run: mkdocs gh-deploy --force
+          python-version: '3.x'
+          cache: 'pip'
+      
+      - name: Install dependencies
+        run: |
+          pip install mkdocs-material
+          pip install mkdocs-roamlinks-plugin
+          pip install mkdocs-rss-plugin
+          # pip install mkdocs-mermaid2-plugin
+      
+      - name: Deploy to GitHub Pages
+        run: mkdocs gh-deploy --force
