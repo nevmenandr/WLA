@@ -10,7 +10,3 @@
 
 [[Содержание]]
 
-## Блог
-
-[[WLA/docs/blog/index|index]]
-
