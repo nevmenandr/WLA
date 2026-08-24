@@ -9,7 +9,7 @@ author: Мурсилис II
 translator: DeepSeek
 source: Перевод на французский язык Эммануэля Лароша (1975) и английский перевод в Beckman, Bryce, Cline "The Ahhiyawa Texts" (2011)
 wikipedia: https://en.wikipedia.org/wiki/Mursili_II
-tags: [хетты, анналы, Мурсилис II, летопись, историография, antiquity]
+tags: [хетты, анналы, Мурсилис-II, летопись, историография, antiquity]
 ---
 
 # Анналы Мурсилиса II

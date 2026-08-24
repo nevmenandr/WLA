@@ -59,12 +59,12 @@ feb URL: https://feb-web.ru/feb/ivl/vl1/vl1-0722.htm
 
 ## Тексты
 
-| Название по-русски | Название по-английски | Примерная датировка | Ссылка на англоязычный перевод |
-| :--- | :--- | :--- | :--- |
-| **«[[Великий гимн Атону]]»** | *The Great Hymn to the Aten* | сер. XIV в. до н. э. (правление Эхнатона) | https://smithsonianassociates.org/ticketing/attachments/262998/pdf/Tell-El-Amarna-Handout-Updated-Date#1#1 |
-| **«[[Сказка о двух братьях]]»** | *The Tale of Two Brothers* | XIX династия (ок. 1298–1187 гг. до н. э.) | https://www.barnesandnoble.com/w/egyptian-hieroglyphic-reading-book-for-beginners-e-a-wallis-budge/1100906331 |
-| **«[[Сказка о взятии Юпы]]»** | *The Taking of Joppa* | XVIII династия (время Тутмоса III) | https://digilibraries.com/book/egyptian-tales-translated-from-the-papyri-second-series-xviiith-to-xixth-dynasty |
-| **«[[Поэма Пентаура]]»** | *The Poem of Pentaur* | XIII в. до н. э. (правление Рамсеса II) | https://digi.ub.uni-heidelberg.de/diglit/brugsch1891/0300/image,info |
+| Название по-русски              | Название по-английски        | Примерная датировка                       | Ссылка на англоязычный перевод                                                                                  |
+| :------------------------------ | :--------------------------- | :---------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **«[[Великий гимн Атону]]»**    | *The Great Hymn to the Aten* | сер. XIV в. до н. э. (правление Эхнатона) | https://smithsonianassociates.org/ticketing/attachments/262998/pdf/Tell-El-Amarna-Handout-Updated-Date#1#1      |
+| **«[[Сказка о двух братьях]]»** | *The Tale of Two Brothers*   | XIX династия (ок. 1298–1187 гг. до н. э.) | https://www.barnesandnoble.com/w/egyptian-hieroglyphic-reading-book-for-beginners-e-a-wallis-budge/1100906331   |
+| **«[[Сказка о взятии Юпы]]»**   | *The Taking of Joppa*        | XVIII династия (время Тутмоса III)        | https://digilibraries.com/book/egyptian-tales-translated-from-the-papyri-second-series-xviiith-to-xixth-dynasty |
+| **«[[Поэма Пентаура]]»**        | *The Poem of Pentaur*        | XIII в. до н. э. (правление Рамсеса II)   | https://digi.ub.uni-heidelberg.de/diglit/brugsch1891/0300/image,info                                            |
 
 ## Следующий раздел
 

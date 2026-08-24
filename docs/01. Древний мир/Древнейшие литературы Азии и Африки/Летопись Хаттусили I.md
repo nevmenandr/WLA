@@ -9,7 +9,7 @@ author: Хаттусили I
 translator: DeepSeek
 source: https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=973&cid=705051&mid=1712713
 wikipedia: https://en.wikipedia.org/wiki/Hattusili_I
-tags: [хетты, анналы, Хаттусили I, историография, древнее царство, antiquity]
+tags: [хетты, анналы, Хаттусили-I, историография, древнее-царство, antiquity]
 ---
 
 # Летопись Хаттусили I

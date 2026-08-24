@@ -9,7 +9,7 @@ author: Мурсилис II (предположительно)
 translator: DeepSeek
 source: https://rd.springer.com/content/pdf/bbm%3A978-3-319-28937-3%2F1.pdf
 wikipedia: https://en.wikipedia.org/wiki/Mursili_II
-tags: [хетты, молитва, Мурсилис II, чума, древнее царство, antiquity]
+tags: [хетты, молитва, Мурсилис-II, чума, древнее-царство, antiquity]
 ---
 
 # Молитва Мурсилиса II о чуме

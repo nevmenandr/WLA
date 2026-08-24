@@ -41,10 +41,10 @@ feb URL: https://feb-web.ru/feb/ivl/vl1/vl1-1252.htm
 
 ## Тексты
 
-| Название по-русски | Название по-английски | Примерная датировка | Ссылка на англоязычный перевод |
-| :--- | :--- | :--- | :--- |
-| **[[Летопись Хаттусили I]]** | *Annals of Ḫattušili I* | ок. 1650–1620 гг. до н.э. | https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=973&cid=705051&mid=1712713 |
-| **[[Легенда о Нарам-Суэне]]** | *Legend of Naram-Sin* | XVIII–XVI вв. до н.э. (оригинал) | https://oracc.museum.upenn.edu/arrim/downloads/arrim8/arrim8.pdf |
+| Название по-русски            | Название по-английски   | Примерная датировка              | Ссылка на англоязычный перевод                                                                         |
+| :---------------------------- | :---------------------- | :------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **[[Летопись Хаттусили I]]**  | *Annals of Ḫattušili I* | ок. 1650–1620 гг. до н.э.        | https://www2.hf.uio.no/polyglotta/index.php?page=fulltext&view=fulltext&vid=973&cid=705051&mid=1712713 |
+| **[[Легенда о Нарам-Суэне]]** | *Legend of Naram-Sin*   | XVIII–XVI вв. до н.э. (оригинал) | https://oracc.museum.upenn.edu/arrim/downloads/arrim8/arrim8.pdf                                       |
 
 ## Следующий раздел
 
