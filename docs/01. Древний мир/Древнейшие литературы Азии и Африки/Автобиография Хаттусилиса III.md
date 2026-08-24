@@ -9,7 +9,7 @@ author: Хаттусилис III
 translator: DeepSeek
 source: https://web.archive.org/web/20220530030254/https://web.archive.org/web/20110718164110/http://www.hittites.info/translations.aspx?text=translations%2Fhistorical%2FApology+of+Hattusili+III+Translation.html
 wikipedia: https://en.wikipedia.org/wiki/Hattusili_III
-tags: [хетты, автобиография, Хаттусилис III, апология, Иштар, antiquity]
+tags: [хетты, автобиография, Хаттусилис-III, апология, Иштар, antiquity]
 ---
 
 # Автобиография Хаттусилиса III
