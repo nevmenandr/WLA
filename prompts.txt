@@ -1,3 +1,95 @@
 Ты - современный креативный иллюстратор, твоя задача - создать промпт только на английском языке для генерации визуально привлекательной иллюстрации к древнеаккадскому тексту. Напиши только детальный промпт без заголовков и комментариев. Текст:
 
+==========================
+
+Я показываю тебе таблицу, а ты делаешь навигационные блоки для пунктов этой таблицы строго по образцу и соблюдая последовательность. Пример:
+
+Таблица:
+
+# Древнеегипетская литература
+
+| Название по-русски           | Название по-английски          | Примерная датировка                              | Ссылка на англоязычный перевод                                                                                  |
+| :--------------------------- | :----------------------------- | :----------------------------------------------- | :-------------------------------------------------------------------------------------------------------------- |
+| **«[[Рассказ Синухе]]»**     | *The Story of Sinuhe*          | Среднее царство, XII династия                    | [reshafim.org.il](https://web.archive.org/web/20190402003751/http://reshafim.org.il/ad/egypt/texts/sinuhe.htm)  |
+| **«[[Поучение Аменемопе]]»** | *The Instruction of Amenemope* | Рамессидский период (ок. 1300–1075 гг. до н.э.)  | [touregypt.net](https://web.archive.org/web/20221130104019/http://www.touregypt.net/instructionofamenemope.htm) |
+
+Навигационные блоки:
+
+## Навигация
+
+[[Поучение Аменемопе|Следующий текст →]]
+
+### Раздел
+
+[[Древнеегипетская литература]]
+
+## Навигация
+
+[[Рассказ Синухе|← Предыдущий текст]] * [[Тексты пирамид|Следующий текст →]]
+
+### Раздел
+
+[[Древнеегипетская литература]]
+
+Таблица:
+
+# Литература Древнего царства (III тыс. до н. э.)
+
+| Название по-русски | Название по-английски | Примерная датировка | Ссылка на англоязычный перевод |
+| :--- | :--- | :--- | :--- |
+| **«[[Тексты пирамид]]»** | *The Pyramid Texts* | V–VI династии (ок. 2350–2175 гг. до н.э.) | [archive.org](https://archive.org/stream/THEPYRAMIDTEXTSTRANSLATION/THE%20PYRAMID%20TEXTS%20TRANSLATION_djvu.txt)  |
+| **[[Надпись Уни]]** | *The Inscription of Weni* | VI династия (ок. 2345–2181 гг. до н.э.) | [reshafim.org.il](https://web.archive.org/web/20180810083122/http://reshafim.org.il/ad/egypt/texts/weni.htm)  |
+| **«[[Поучение Птаххотепа]]»** | *The Instruction of Ptahhotep* | V династия (ок. 2414–2375 гг. до н.э.) | [archive.org](https://ia800901.us.archive.org/2/items/instructionofpta00ptahrich/instructionofpta00ptahrich.pdf)  |
+
+Навигационные блоки:
+
+## Навигация
+
+[[Поучение Аменемопе|← Предыдущий текст]] * [[Надпись Уни|Следующий текст →]]
+
+### Раздел
+
+[[Литература Древнего царства (III тыс. до н. э.)]]
+
+## Навигация
+
+[[Тексты пирамид|← Предыдущий текст]] * [[Поучение Птаххотепа|Следующий текст →]]
+
+### Раздел
+
+[[Литература Древнего царства (III тыс. до н. э.)]]
+
+## Навигация
+
+[[Надпись Уни|← Предыдущий текст]] * [[Поучение царя Гераклеопольского Мерикара|Следующий текст →]]
+
+### Раздел
+
+[[Литература Древнего царства (III тыс. до н. э.)]]
+
+Сделай то же для таблицы:
+
+# Шумерская литература
+
+| Название по-русски | Название по-английски | Примерная датировка | Ссылка на англоязычный перевод |
+| :--- | :--- | :--- | :--- |
+| **[[Сказание о Гильгамеше, Энкиду и подземном мире]]** | *Gilgameš, Enkidu, and the Underworld* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.4#) |
+| **«[[Нисхождение Инанны в подземный мир]]»** | *Inana's descent to the nether world* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.4.1#) |
+| **«[[Сон Думузи]]»** | *Dumuzid's dream* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.4.3#) |
+| **«[[Энлиль и Нинлиль]]»** | *Enlil and Ninlil* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.2.1#) |
+| **«[[Проклятие Аккада]]»** | *The cursing of Agade* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.1.5#) |
+| **«[[Плач по Уру]]»** | *The lament for Sumer and Urim* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.2.2.2#) |
+| **«[[Подвиги Нинурты]]»** | *Ninurta's exploits* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.6.1#) |
+| **«[[Энки и мировой порядок]]»** | *Enki and the world order* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.1.3#) |
+| **«[[Спор Овцы и Зерна]]»** | *The debate between Sheep and Grain* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.5.3.2#) |
+| **«[[Спор Птицы и Рыбы]]»** | *The debate between Bird and Fish* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.5.3.5#) |
+| **«[[Наставления Шуруппака]]»** | *The instructions of Šuruppag* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.5.6.1#) |
+| **«[[Гимн мотыге]]»** | *The song of the hoe* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.5.5.4#) |
+| **«[[Гильгамеш и Хувава]]»** | *Gilgameš and Ḫuwawa* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.1.5#) |
+| **«[[Лугальбанда в горной пещере]]»** | *Lugalbanda in the mountain cave* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.1#) |
+| **«[[Лугальбанда и птица Анзуд]]»** | *Lugalbanda and the Anzud bird* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.2#) |
+| **«[[Энмеркар и Энсухкешданна]]»** | *Enmerkar and En-suhgir-ana* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.8.2.4#) |
+| **«[[Потоп]]»** | *The Flood story* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.1.7.4#) |
+| **«[[Песнь о плуге]]»** | *The song of the plough* | XVIII в. до н.э. | [etcsl.orinst.ox.ac.uk](https://etcsl.orinst.ox.ac.uk/cgi-bin/etcsl.cgi?text=t.5.5.3#) |
+
 ...
