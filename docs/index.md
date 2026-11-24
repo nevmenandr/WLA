@@ -10,3 +10,5 @@
 
 [[Содержание]]
 
+![pic](https://github.com/nevmenandr/homepage/blob/master/images/wla.jpg?raw=true)
+
